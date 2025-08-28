@@ -1,0 +1,230 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.headers {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.header {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.subHeader {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.option {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.label {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.options {
+    font-size: 35px;
+    font-weight: bolder;
+    font-stretch: expanded;
+    font-family: 'Roboto Condensed', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 10px;
+}
+
+.ctrl {
+    padding-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: rgb(185, 223, 224);
+    width: 60px;
+    border-radius: 8px;
+    border: none;
+    padding-top: 3px;
+}
+
+.button:hover {
+    background-color: rgb(144, 202, 249);
+    color: #222;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: scale(1);
+    transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+.button,.voteButton:active {
+  transform: scale(1.08) translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.voting {
+    padding-top: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.liVote{
+    font-weight: bolder;
+    padding: 15px;
+}
+
+.voteButton {
+    background-color: rgb(185, 223, 224);
+    width: 60px;
+    border-radius: 8px;
+    border: none;
+    padding-top: 3px;
+    margin-top: 5px;
+}
+
+.input{
+    background-color: rgb(185, 223, 224);
+    width: 108px;
+    padding: 3px;
+    align-items: center;
+}

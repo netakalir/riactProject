@@ -1,0 +1,11 @@
+.app{
+  display: flex;
+  flex-wrap: wrap;          /* מאפשר לילדים לעבור שורה אם אין מקום */
+  justify-content: space-evenly; /* מרווח שווה בין הילדים לאורך הרוחב */
+  align-content: space-evenly;   /* מרווח שווה בין השורות לאורך הגובה */
+  width: 100vw;
+  height: 100vh;
+  gap: 15px;                /* רווח בין כרטיסים */
+  padding: 10px;            /* רווח פנימי קטן מהקצה */
+  box-sizing: border-box;
+}

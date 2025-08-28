@@ -1,0 +1,91 @@
+.cardProfile {
+    align-items: center;
+    background-color: rgb(196, 255, 221);
+    width: 20vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;           /* רווח קטן בין כל ילד */
+    padding: 12px;      /* ריווח פנימי מהקצוות */
+    border-radius: 12px; /* קצת עיגול לפינה */
+}
+
+.img {
+    padding-top: 7px;
+    width: 120px;         /* רוחב התמונה */
+    height: 120px;        /* גובה התמונה */
+    border-radius: 50%;   /* הופך את התמונה לעגולה */
+    object-fit: cover;    /* שלא יתעוות */
+}
+
+.rotate360 {
+    animation: rotate360 1s linear;
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.name {
+    color: gray;
+    padding: 0;
+    margin: 0;            /* שלא ייווצר רווח מיותר */
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.description {
+    color: gray;
+    padding: 0;
+    margin: 0;            /* ביטול מרווח ברירת מחדל */
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.button1 {
+    width: 40%;              /* רוחב יחסי לכרטיס */
+    max-width: 150px;        /* שלא יגדל יותר מדי */
+    padding: 10px 15px;      /* גובה/רוחב פנימי נוח */
+    background-color: purple;
+    color: white;
+    border: none;            /* בלי גבול ברירת מחדל */
+    border-radius: 8px;      /* פינות מעוגלות */
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;         /* סמן יד */
+    transition: 0.3s ease;   /* אפקט חלק במעבר */
+}
+
+.button1:hover {
+    background-color:darkviolet; /* אפקט מעבר */
+}
+.button2 {
+    width: 40%;              /* רוחב יחסי לכרטיס */
+    max-width: 150px;        /* שלא יגדל יותר מדי */
+    padding: 10px 15px;      /* גובה/רוחב פנימי נוח */
+    background-color: green;
+    color: white;
+    border: none;            /* בלי גבול ברירת מחדל */
+    border-radius: 8px;      /* פינות מעוגלות */
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;         /* סמן יד */
+    transition: 0.3s ease;   /* אפקט חלק במעבר */
+}
+
+.button2:hover {
+    background-color:darkgreen; /* אפקט מעבר */
+}
+
+.foter{
+    position: fixed;
+    bottom: 0px;
+    left: 48%;
+    color: black;
+    font-size: 12px;
+}
